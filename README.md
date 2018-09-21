@@ -1,3 +1,4 @@
 # PrayerTimes
 Using the Prayer Time API : https://prayertimes.date/api
-https://raw.githubusercontent.com/PrayerZone/PrayerTimes/master/images/prayer-sample.png
+
+![Widget](https://raw.githubusercontent.com/PrayerZone/PrayerTimes/master/images/prayer-sample.png)
