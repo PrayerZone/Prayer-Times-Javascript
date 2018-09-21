@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Prayer Times widget</title>
+    <link href="widget.api.v1.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="margin:auto; border:1px solid #c0c0c0" id="prayer-container">
+        <div class="prayer_time">Prayer Times</div>
+        <div id="prayer_city">Bangkok</div>
+        <div id="prayer_date">Friday, September 21, 2018</div>
+        <div id="prayer_clock">12:06:33</div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Imsak</td>
+                    <td id="Imsak">04:46</td>
+                </tr>
+                <tr>
+                    <td>Fajr</td>
+                    <td id="Fajr">04:56</td>
+                </tr>
+                <tr>
+                    <td>Dhuhr</td>
+                    <td id="Dhuhr">12:11</td>
+                </tr>
+                <tr>
+                    <td>Asr</td>
+                    <td id="Asr">15:30</td>
+                </tr>
+                <tr>
+                    <td>Maghrib</td>
+                    <td id="Maghrib">18:28</td>
+                </tr>
+                <tr>
+                    <td>Isha</td>
+                    <td id="Isha">19:22</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        var api_url = 'https://api.pray.zone/v2/times/today.json?ip=auto';
+        document.addEventListener("DOMContentLoaded", function () {
+            PrayerTimesApi();
+        });
+    </script>
+    <script src="widget.api.v1.js" defer></script>
+</body>
+</html>
